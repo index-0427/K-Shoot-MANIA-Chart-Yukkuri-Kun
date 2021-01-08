@@ -1,1 +1,1 @@
-# K-Shoot-MANIA-Score-Speed-Converter
+# ケーシュー譜面ゆっくりくん
