@@ -19,10 +19,10 @@ EXPORT_DIR_PATH:pathlib.Path = PROJECT_ROOT_PATH / 'export'
 
 # import/exportディレクトリの存在判定
 if not IMPORT_DIR_PATH.exists():
-    print('IMPORTディレクトリがありません。実行ファイルと同階層に空のIMPORTディレクトリを作成します。')
+    print('[INFO]IMPORTディレクトリがありません。実行ファイルと同階層に空のIMPORTディレクトリを作成します。')
     IMPORT_DIR_PATH.mkdir()
 if not EXPORT_DIR_PATH.exists():
-    print('IMPORTディレクトリがありません。実行ファイルと同階層に空のIMPORTディレクトリを作成します。')
+    print('[INFO]IMPORTディレクトリがありません。実行ファイルと同階層に空のIMPORTディレクトリを作成します。')
     EXPORT_DIR_PATH.mkdir()
 
 # input内のファイル一覧を取得
@@ -50,11 +50,8 @@ for input_chart_file_path in input_chart_file_paths:
     after_tempos = []
 
     for i in previous_tempos:
-        print(i)
         tempo = float(re.search(r'[\d.]+$',i).group())
         after_tempos.append("t=" + str(tempo*float(chart_speed_rate)))
-
-    print(after_tempos)
 
     # テンポ置換
     output_chart = input_chart
@@ -80,3 +77,8 @@ for input_audio_file_path in input_audio_file_paths:
         + str(output_audio_file_path)
 
     subprocess.call(cmd)
+
+print('[INFO]プログラムが終了しました。')
+print('[INFO]' + str(len(input_audio_file_paths)) + 'つの音声ファイルを変換しました。')
+print('[INFO]' + str(len(input_chart_file_paths)) + 'つの譜面ファイルを変換しました。')
+os.system('PAUSE')

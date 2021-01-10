@@ -1,6 +1,8 @@
 /kshssc
 /.vscode
 /export
+/import
+/exe
 __pycache__
 *.ogg
 *.ksh
