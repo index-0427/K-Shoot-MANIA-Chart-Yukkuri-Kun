@@ -20,9 +20,9 @@ K-Shoot MANIA公式サイト：https://www.kshootmania.com
 [Dropbox](https://www.dropbox.com/sh/fajyymu0g3693xk/AACvZY0ozAQMb7VDGsvD1q6wa?dl=0)
 
 # Usage
-1. exeファイルを実行すると、同階層に「import」「export」ディレクトリが作成されます。「import」ディレクトリに変換したい.kshファイル、.oggファイルを入れてください。
-1. exeファイルを再度実行し、変換したい速度倍率をターミナルに入力してください。
-1. 「export」ディレクトリに変換後の譜面/音声ファイルが格納されます。
+1. プログラムを実行すると、同階層に「import」「export」フォルダが作成されます。<br>「import」フォルダに変換したい.kshファイル、.oggファイルを入れてください。
+1. プログラムを再度実行し、変換したい速度倍率を入力してください。
+1. 「export」フォルダに変換後の譜面/音声ファイルが格納されます。
 
 # License
 
