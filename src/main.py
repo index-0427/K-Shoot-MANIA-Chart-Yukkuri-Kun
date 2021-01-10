@@ -8,9 +8,6 @@ import re
 import pathlib
 import module_path
 
-# 譜面倍率入力
-print('譜面の倍率を入力してください。(例:0.75):', end='')
-chart_speed_rate:str = input()
 
 # ルートパス取得
 PROJECT_ROOT_PATH:pathlib.Path = module_path.get_project_path(sys.argv[0])
@@ -18,12 +15,17 @@ IMPORT_DIR_PATH:pathlib.Path = PROJECT_ROOT_PATH / 'import'
 EXPORT_DIR_PATH:pathlib.Path = PROJECT_ROOT_PATH / 'export'
 
 # import/exportディレクトリの存在判定
-if not IMPORT_DIR_PATH.exists():
-    print('[INFO]IMPORTディレクトリがありません。実行ファイルと同階層に空のIMPORTディレクトリを作成します。')
-    IMPORT_DIR_PATH.mkdir()
 if not EXPORT_DIR_PATH.exists():
     print('[INFO]IMPORTディレクトリがありません。実行ファイルと同階層に空のIMPORTディレクトリを作成します。')
     EXPORT_DIR_PATH.mkdir()
+if not IMPORT_DIR_PATH.exists():
+    print('[INFO]IMPORTディレクトリがありません。実行ファイルと同階層に空のIMPORTディレクトリを作成します。')
+    IMPORT_DIR_PATH.mkdir()
+    exit()
+
+# 譜面倍率入力
+print('譜面の倍率を入力してください。(例:0.75):', end='')
+chart_speed_rate:str = input()
 
 # input内のファイル一覧を取得
 input_audio_file_paths:list = []
