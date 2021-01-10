@@ -15,7 +15,7 @@ K-Shoot MANIA公式サイト：https://www.kshootmania.com
 
 以下のファイルサーバーから最新版のexeファイルをダウンロードしてください。
 
-(準備中)
+[Dropbox](https://www.dropbox.com/sh/fajyymu0g3693xk/AACvZY0ozAQMb7VDGsvD1q6wa?dl=0)
 
 # Usage
 1. exeファイルを実行すると、同階層に「import」「export」ディレクトリが作成されます。「import」ディレクトリに変換したい.kshファイル、.oggファイルを入れてください。
