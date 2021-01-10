@@ -42,7 +42,7 @@ for input_file in os.listdir(IMPORT_DIR_PATH):
 for input_chart_file_path in input_chart_file_paths:
     output_chart_file_path = EXPORT_DIR_PATH / input_chart_file_path.name
     # ファイルオープン
-    with open(input_chart_file_path, 'r') as f:
+    with open(input_chart_file_path, 'r', encoding='utf_8_sig') as f:
         input_chart = f.read()
 
     # t=XXXの一覧を取得
@@ -62,7 +62,7 @@ for input_chart_file_path in input_chart_file_paths:
         output_chart = re.sub(regex_string, after_tempo, output_chart, flags=re.MULTILINE)
 
     # ファイル出力
-    with open(output_chart_file_path, 'w') as f:
+    with open(output_chart_file_path, 'w', encoding='utf_8_sig') as f:
         f.write(output_chart)
 
 ## oggファイル書き出し
