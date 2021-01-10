@@ -9,6 +9,8 @@ K-Shoot MANIA公式サイト：https://www.kshootmania.com
 * ffmpeg(https://ffmpeg.org)
 
   PATHを通す必要があります。
+  <br><br>
+  参考：[【Windows】Windows10にffmpegをインストールする - ソースに絡まるエスカルゴ](https://rikoubou.hatenablog.com/entry/2019/11/07/144533)
 
 
 # Installation
