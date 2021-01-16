@@ -13,6 +13,7 @@ import module_path
 PROJECT_ROOT_PATH:pathlib.Path = module_path.get_project_path(sys.argv[0])
 IMPORT_DIR_PATH:pathlib.Path = PROJECT_ROOT_PATH / 'import'
 EXPORT_DIR_PATH:pathlib.Path = PROJECT_ROOT_PATH / 'export'
+FFMPEG_FILE_PATH:pathlib.Path = PROJECT_ROOT_PATH / 'lib' / 'ffmpeg.exe'
 
 # import/exportディレクトリの存在判定
 if not EXPORT_DIR_PATH.exists():
@@ -69,7 +70,8 @@ for input_chart_file_path in input_chart_file_paths:
 for input_audio_file_path in input_audio_file_paths:
     output_audio_file_path:pathlib.Path = EXPORT_DIR_PATH / input_audio_file_path.name
 
-    cmd = 'ffmpeg -i "' \
+    cmd = str(FFMPEG_FILE_PATH) \
+        + ' -i "' \
         + str(input_audio_file_path) \
         + '" -vf setpts=PTS/' \
         + chart_speed_rate \
