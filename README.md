@@ -7,8 +7,9 @@ K-Shoot MANIA公式サイト：https://www.kshootmania.com
 
 # Installation
 
-最新Release -> Assetsから「vX.X.X.zip」ファイルをダウンロードしてください。<br>
-https://github.com/index-0427/K-Shoot-MANIA-Chart-Yukkuri-Kun/releases
+[Releases](https://github.com/index-0427/K-Shoot-MANIA-Chart-Yukkuri-Kun/releases)
+
+最新のRelease -> Assetsから「vX.X.X.zip」ファイルをダウンロードしてください。<br>
 
 # Usage
 1. ダウンロードしたzipファイルを解凍してください。
@@ -18,4 +19,4 @@ https://github.com/index-0427/K-Shoot-MANIA-Chart-Yukkuri-Kun/releases
 
 # License
 
-This application is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+This application is under [MIT license](https://github.com/index-0427/K-Shoot-MANIA-Chart-Yukkuri-Kun/blob/master/LICENSE).
