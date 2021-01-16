@@ -69,14 +69,15 @@ for input_chart_file_path in input_chart_file_paths:
 for input_audio_file_path in input_audio_file_paths:
     output_audio_file_path:pathlib.Path = EXPORT_DIR_PATH / input_audio_file_path.name
 
-    cmd = "ffmpeg -i " \
+    cmd = 'ffmpeg -i "' \
         + str(input_audio_file_path) \
-        + " -vf setpts=PTS/" \
+        + '" -vf setpts=PTS/' \
         + chart_speed_rate \
         + " -af atempo=" \
         + chart_speed_rate \
-        + " " \
-        + str(output_audio_file_path)
+        + ' "' \
+        + str(output_audio_file_path) \
+        + '"'
 
     subprocess.call(cmd)
 
