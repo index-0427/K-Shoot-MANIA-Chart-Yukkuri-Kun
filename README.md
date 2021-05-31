@@ -5,7 +5,7 @@ masaka氏作のフリー同人音楽ゲーム「K-Shoot MANIA」の
 譜面再生速度変換ツールです。<br>
 K-Shoot MANIA公式サイト：https://www.kshootmania.com
 
-# Installation
+# Install
 
 [Releases](https://github.com/index-0427/K-Shoot-MANIA-Chart-Yukkuri-Kun/releases)
 
